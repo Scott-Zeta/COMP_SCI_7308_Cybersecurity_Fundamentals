@@ -13,8 +13,13 @@ def main():
     l2 = 100
     for c in inputsr:
         p = random.randint(0,l2)
-        x = '{:04d}'.format(p) + ":" + randomString(p) + c + randomString(l2 - p)
+        salt1 = randomString(p)
+        salt2 = randomString(l2 - p)
+        x = '{:04d}'.format(p) + ":" + salt1 + c + salt2
         print(x)
+        print(salt1)
+        print(c)
+        print(salt2)
 
 if __name__ == "__main__":
     main()
