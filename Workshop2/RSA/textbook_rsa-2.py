@@ -1,14 +1,14 @@
 # function to calculate inverse modular
 # using the extended Euclidean algorithm
-def invmod(a,n):
+def invmod(e,e_coPrime):
   i=1
   while True:
-    c = n * i + 1;
-    if(c%a==0):
-      c = c/a
+    d = e_coPrime * i + 1;
+    if(d%e==0):
+      d = d/e
       break;
     i = i+1
-  return c
+  return d
 
 p = int("E017",16) # first prime
 q = int("D20D",16) # second prime
@@ -28,8 +28,12 @@ print "checking d*e mod (p-1)*(q-1): " + str(((d*e) % ((p-1)*(q-1))))
 # encrypting short message using public exponent e
 msg = 12345
 enc = pow(msg,e, n) # supplying the 3rd parameter efficiently computes the mod
+
+# encrypted  enc = (msg^e)/n
 print "Message " + str(msg) + " is encrypted to: " + str(enc)
 
 # decrypt message using private exponent d
 plain = pow(enc,d, n) # supplying the 3rd parameter efficiently computes the mod
+
+# decrpted plain = (enc^d)/n = msg
 print "Cipher " + str(enc) + " is decrypted to: " + str(plain)
