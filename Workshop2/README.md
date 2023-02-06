@@ -40,3 +40,32 @@ private key also has these info, so they allow decrpyt each other
 
 Alert: RSA key can only be used to encrypt message less than its size (minus padding). So it usally used to encrypt other symmetric key.
 ```openssl rsautl -decrypt -inkey private.key -in message.dat``` use this to decrypt
+
+1. Execute the following command (the example below is for 128 bits, so the one you will see is much longer)
+```
+# openssl asn1parse -i -in private.key
+0:d=0 hl=2 l= 97 cons: SEQUENCE
+2:d=1 hl=2 l= 1 prim: INTEGER :00
+5:d=1 hl=2 l= 17 prim: INTEGER :AB32AD57BC713D952BE8D30099B41BEF # this is the modulus n
+24:d=1 hl=2 l= 3 prim: INTEGER :010001 # public exponent e
+29:d=1 hl=2 l= 16 prim: INTEGER :76B72FA9358DB94B835AF9B0F4C0D721 # private exponent d
+47:d=1 hl=2 l= 9 prim: INTEGER :DD454679C3CA4C77 # secret p
+58:d=1 hl=2 l= 9 prim: INTEGER :C611776FD9A7A249 # secret q
+69:d=1 hl=2 l= 8 prim: INTEGER :75081A01773BFD7B
+79:d=1 hl=2 l= 8 prim: INTEGER :2A37B4DE89651AC9
+89:d=1 hl=2 l= 8 prim: INTEGER :228DBCF687C89CD5
+```
+2. Now we know n, p, q, e and d, you can use this Python code to verify their relationships (n=p*q and d*e mod (p-1)*(q-1) = 1 as follows
+```
+p = int("00DD454679C3CA4C77",16)
+q = int("00C611776FD9A7A249", 16)
+n = int("00AB32AD57BC713D952BE8D30099B41BEF", 16)
+e = int("010001",16)
+d = int("76B72FA9358DB94B835AF9B0F4C0D721", 16)
+
+# Verify n = p*q
+print "[n]:" + str(n) + " [p*q]: " + str(p*q)
+
+# verify e*d mod{(p-1)*(q-1)} = 1
+print "[e*d mod{(p-1)*(q-1)}]: " + str((e*d)%((p-1)*(q-1)))
+```
