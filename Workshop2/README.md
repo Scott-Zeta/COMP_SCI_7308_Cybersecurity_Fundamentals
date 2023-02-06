@@ -21,3 +21,22 @@ Both ECB and CBC are widely used in various encryption applications, but CBC is 
 
 ## RSA (public private key pair)
 RSA is a public-key cryptography algorithm. It is widely used for secure data transmission. In RSA, each user has a pair of public and private keys. The public key is used to encrypt the message and the private key is used to decrypt it. The security of RSA is based on the mathematical property that it is difficult to factorize the product of two large prime numbers, which are used to generate the keys. RSA is widely used in many applications such as digital signatures, software protection, and SSL/TLS protocols.
+
+## RSA structure?
+encrypted  enc = (msg^e)/n
+decrpted plain = (enc^d)/n = msg
+command ```openssl rsa -text -pubin < public.key``` can see the info of e and n in the key.
+```
+Public-Key: (512 bit)
+Modulus:
+    00:d4:24:4c:60:12:e4:d3:b9:1a:2a:8b:c7:21:c8:
+    08:e6:55:d6:ef:cd:db:6e:fc:eb:2c:e3:6c:ed:e9:
+    e0:59:f2:ad:4e:20:65:49:3d:2f:8d:49:3b:9c:7b:
+    4f:38:48:e7:9a:90:9c:9b:38:58:71:04:25:00:01:
+    f2:f8:3b:34:73
+Exponent: 65537 (0x10001)
+```
+private key also has these info, so they allow decrpyt each other
+
+Alert: RSA key can only be used to encrypt message less than its size (minus padding). So it usally used to encrypt other symmetric key.
+```openssl rsautl -decrypt -inkey private.key -in message.dat``` use this to decrypt
