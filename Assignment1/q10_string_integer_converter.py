@@ -9,12 +9,7 @@ def int_to_string(number):
     bin = number.to_bytes((number.bit_length() + 7) // 8, byteorder='big')
     return binascii.b2a_qp(bin).decode("utf-8")
 
-def main():
-    with open("q10_rsa.encrypted") as f:
-        s = f.read()
-    print(string_to_int(s))
-    with open("q10_encrypted_to_integer.txt","w") as f:
-        f.write(str(string_to_int(s)))        
-    
+def main():        
+    print(int_to_string(2559400531514252965350352773429248709764082935695171087997))
 if __name__ == "__main__":
     main()    
