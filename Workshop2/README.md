@@ -78,3 +78,9 @@ Some features of Cryptographic Hashing, also refer to "digest"
 4. Fixed-size: The size of the output of the hash function is always the same, regardless of the size of the input.
 
 So it can not be decrypt to original message, but can be used in download or transmission verify.
+
+## Digital Signature
+It is like a kind of combination of RSA and Hashing.
+Sender use its private key encrypt the hashing, then reciever use public key decrpyt and verify.
+Check if the file has been corrputed or from true sender.
+Since Hashing always has fixed size and RSA can only encrypt info no longer than the key. It is a effective combination.
