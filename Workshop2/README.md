@@ -69,3 +69,12 @@ print "[n]:" + str(n) + " [p*q]: " + str(p*q)
 # verify e*d mod{(p-1)*(q-1)} = 1
 print "[e*d mod{(p-1)*(q-1)}]: " + str((e*d)%((p-1)*(q-1)))
 ```
+
+## Cryptographic Hashing
+Some features of Cryptographic Hashing, also refer to "digest"
+1. Deterministic: Given the same input, the output of the hash function will always be the same.
+2. Non-invertible: Given only the output of the hash function, it is computationally infeasible to determine the 3.original input.
+3. Collision-resistant: It is computationally infeasible to find two different inputs that produce the same output (known as a "collision").
+4. Fixed-size: The size of the output of the hash function is always the same, regardless of the size of the input.
+
+So it can not be decrypt to original message, but can be used in download or transmission verify.
