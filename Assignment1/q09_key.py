@@ -8,6 +8,7 @@ def mycrypto (filename):
         blob = f.read() 
         for b in blob:   
             key = random.randrange(255)
+            # bitwise XOR
             x = ord(b) ^ key
             o.write(chr(x))   
 
