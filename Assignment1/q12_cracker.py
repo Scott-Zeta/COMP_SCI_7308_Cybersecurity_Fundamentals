@@ -10,5 +10,19 @@ def ceaser():
                 c = alphabet[alphabet.index(c.lower()) - n]
             newString += c
         print(newString)
+
+# frequency analysis    
+def freq():
+    with open("q12_ciphertext.txt") as f:
+        s = f.read()
+    dic = {}
+    for c in s:
+        if c.isalpha():
+            dic[c] = dic.get(c,0)+1    
+    print(dic)
     
-        
+def main():
+    freq()
+    
+if __name__ == "__main__":
+    main()
