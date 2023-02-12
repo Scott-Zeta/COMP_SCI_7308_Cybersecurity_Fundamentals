@@ -37,6 +37,7 @@ def subsitution():
     print(new_s)
     
 def main():
+    ceaser()
     subsitution()
     
 if __name__ == "__main__":
