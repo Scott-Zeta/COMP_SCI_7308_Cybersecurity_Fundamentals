@@ -6,3 +6,28 @@ Each ASN is assigned by a regional Internet registry (RIR) such as ARIN, RIPE, o
 ASNs are commonly used in the context of the Border Gateway Protocol (BGP), which is the primary protocol used to exchange routing information between Internet routers. By exchanging information about the networks they are connected to and the paths between them, routers can build a map of the Internet and determine the most efficient routes for traffic to take.
 
 ASN can provide info for router path finding, they are an important part of the Internet infrastructure that enables routers to learn about and communicate with other networks, identify the networks that the routers are connected to.
+
+## CVSS2.0 String?
+A kind of standarlized way to represent aspect of the vulnerability.
+
+For example:
+In the CVSS 2.0 scoring system, the letters N, H, and P stand for:
+
+AV: Access Vector 
+AC: Access Complexity
+Au: Authentication
+C: Confidentiality Impact
+I: Integrity Impact
+A: Availability Impact
+
+N: None. No impact on the system.
+H: Partial. The vulnerability allows some access, but not enough to completely compromise the target.
+P: Complete. The vulnerability allows full access to the target.
+In the vector, AV:N/AC:H/Au:N/C:P/I:N/A:N, the values N, H, and P are used to indicate the impact of the vulnerability on the system in the following way:
+
+AV:N: Access Vector is None, meaning that no access is required to exploit the vulnerability.
+AC:H: Access Complexity is High, meaning that special conditions are required to exploit the vulnerability, such as a specific configuration or user interaction.
+Au:N: Authentication is Not Required, meaning that no authentication or privileges are needed to exploit the vulnerability.
+C:P: Confidentiality Impact is Partial, meaning that the vulnerability can only compromise some confidentiality of the system, but not all of it.
+I:N: Integrity Impact is None, meaning that the vulnerability does not affect the integrity of the system.
+A:N: Availability Impact is None, meaning that the vulnerability does not affect the availability of the system.
