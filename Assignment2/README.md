@@ -1,3 +1,13 @@
+# Issue in q08
+I tried 
+```sudo nmap -T4 -sT -Pn -n -p 20000-60000 172.16.15.128```
+```sudo nmap -T4 -sS -Pn -n -p 20000-60000 172.16.15.128```
+for 40001 ports each takes around 1 hour.
+But only get the log in scanLog.txt
+
+run ```netstat -tulpn``` on VM, got portLog_fromHackLab.txt
+more than one port between 20000 to 60000 openning, but its actually cheating, and I can not figure out why I can not see them when nmap scanning.
+
 ## ASN?
 An Autonomous System Number (ASN) is a unique identifier assigned to a group of IP networks that operate together under a single administrative domain. ASNs are used to facilitate routing on the Internet, allowing routers to exchange information about the networks they are connected to and determine the best path for traffic to take.
 

@@ -1,0 +1,43 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-02-21 15:30 ACDT
+Stats: 0:00:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 0.07% done
+Stats: 0:01:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 1.66% done; ETC: 16:37 (1:06:03 remaining)
+Stats: 0:05:06 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 7.62% done; ETC: 16:37 (1:01:47 remaining)
+Stats: 0:07:56 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 11.89% done; ETC: 16:37 (0:58:56 remaining)
+Stats: 0:17:26 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 26.12% done; ETC: 16:37 (0:49:21 remaining)
+Stats: 0:20:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 30.14% done; ETC: 16:37 (0:46:38 remaining)
+Stats: 0:22:51 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 34.22% done; ETC: 16:37 (0:43:55 remaining)
+Stats: 0:25:54 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 38.80% done; ETC: 16:37 (0:40:51 remaining)
+Stats: 0:29:30 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 44.20% done; ETC: 16:37 (0:37:15 remaining)
+Stats: 0:33:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 49.62% done; ETC: 16:37 (0:33:37 remaining)
+Stats: 0:35:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 52.96% done; ETC: 16:37 (0:31:24 remaining)
+Stats: 0:38:25 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 57.56% done; ETC: 16:37 (0:28:19 remaining)
+Stats: 0:47:12 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 70.75% done; ETC: 16:37 (0:19:31 remaining)
+Stats: 0:49:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 73.51% done; ETC: 16:37 (0:17:41 remaining)
+Stats: 0:54:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 81.01% done; ETC: 16:37 (0:12:40 remaining)
+Stats: 0:56:49 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 85.15% done; ETC: 16:37 (0:09:55 remaining)
+Stats: 0:58:09 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 87.15% done; ETC: 16:37 (0:08:35 remaining)
+Stats: 0:59:23 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 89.00% done; ETC: 16:37 (0:07:20 remaining)
+Nmap scan report for 172.16.15.128
+Host is up.
+All 40001 scanned ports on 172.16.15.128 are in ignored states.
+Not shown: 40001 filtered tcp ports (no-response)
+
+Nmap done: 1 IP address (1 host up) scanned in 4004.75 seconds
