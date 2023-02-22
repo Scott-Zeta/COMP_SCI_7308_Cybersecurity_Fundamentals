@@ -1,4 +1,9 @@
-# Issue in q08
+# Issue in q09
+Strang thing.
+The pack sequence must folow the image given. Or it won't get the answer.
+excute with single command one by one doesn't work.
+
+# Issue in q08 (Done, Need to use double VM)
 I tried 
 ```sudo nmap -T4 -sT -Pn -n -p 20000-60000 172.16.15.128```
 ```sudo nmap -T4 -sS -Pn -n -p 20000-60000 172.16.15.128```
