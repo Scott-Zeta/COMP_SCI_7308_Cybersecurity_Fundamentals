@@ -1,9 +1,14 @@
-# Issue in q09
+## Issue in q09 (Done, port knocking)
 Strang thing.
 The pack sequence must folow the image given. Or it won't get the answer.
 excute with single command one by one doesn't work.
 
-# Issue in q08 (Done, Need to use double VM)
+## Port knocking
+The tech in q09 is called port knocking. It requires user send particular pack to particular port in specific sequence. Then the real port for communication will open.
+Port knocking is a security method, but also increase the complexity and burden of the system (when multiple user try knock many ports at the same time).
+In default the nmap -p 1,2,3 will know randomly. If want to knock follow the order given, use -r and give it a sequencial list.
+
+## Issue in q08 (Done, Need to use double VM)
 I tried 
 ```sudo nmap -T4 -sT -Pn -n -p 20000-60000 172.16.15.128```
 ```sudo nmap -T4 -sS -Pn -n -p 20000-60000 172.16.15.128```
