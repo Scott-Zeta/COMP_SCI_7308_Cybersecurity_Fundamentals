@@ -16,9 +16,11 @@ def heap_permute(a, n):
         yield from heap_permute(a, n-1)
 
 # Example usage:
-a = [1,2,3,4]
-for p in heap_permute(a, len(a)):
-    print(p)
+a = [1122,2233,3344]
+with open("./Assignment2/sequence.txt","w") as f:
+    for p in heap_permute(a, len(a)):
+        s = ",".join(map(str,p))
+        f.write(s + "\n")
     
 # This method is by fixed every last elements, than give the every possible previous elements,
 # then fix the second last elements(recursion start), then find the next possible combination.
