@@ -26,3 +26,6 @@ when the printf() function encounters the "%08x" format specifier, it prints the
 
 ## Question
 With multiple %08x, can see the 414141 as the argument AAAA, what are other? Why they have elements like %,0,8,x?
+
+# Exploiting Format String Part2
+Doesn't work, and can not fully understand
