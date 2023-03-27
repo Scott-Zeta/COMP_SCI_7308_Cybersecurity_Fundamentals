@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Mon, 27 Mar 2023 08:06:57 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/7.2.34
+Vary: Accept-Encoding
+Content-Length: 84
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+Hm... you don't seem to be using the correct METHOD. Explore your available OPTIONS.
