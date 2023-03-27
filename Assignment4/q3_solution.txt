@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Mon, 27 Mar 2023 08:22:45 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/7.2.34
+Vary: Accept-Encoding
+Content-Length: 528
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<span style='color:blue'>csf2021_{helper-evaluate-mammogram}</span><br/><br/>Source: <pre>&lt;?php
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+     print(&quot;&lt;span style='color:blue'&gt;csf2021_{helper-evaluate-mammogram}&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&quot;);
+     print(&quot;Source: &lt;pre&gt;&quot; . htmlentities(shell_exec('/bin/cat '. __FILE__)) . &quot;&lt;/pre&gt;&quot;);
+}
+else {
+     print(&quot;Hm... you don't seem to be using the correct METHOD. Explore your available OPTIONS.&quot;);
+}
+?&gt;
+</pre>
