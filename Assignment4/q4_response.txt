@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Tue, 28 Mar 2023 01:02:59 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/7.2.34
+Vary: Accept-Encoding
+Content-Length: 196
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+
+<form class="form-horizontal" method="POST">
+<input type="submit" value="Request Secret" name="submit">
+</form>
+
+Sorry, only superadmins are allowed to see the secret.</body></html>
