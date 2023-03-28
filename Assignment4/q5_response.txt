@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Date: Tue, 28 Mar 2023 01:32:04 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/7.2.34
+Vary: Accept-Encoding
+Content-Length: 3164
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+<h1>Search Superheroes By Name</h1>
+<form action="" method="post">
+	<label>Name or parts of superhero name:</label><input type="plaintext" name="search"/><br/>
+	<input type="submit" name="submit" value="Search"/><br/>
+</form>
+
+<table border=1><tr><th>Name></th><th>Gender</th><th>Alignment</th></tr>
+<tr><td>Alfred Pennyworth</td><td>Male</td><td>good</td><tr><td>Black Flash</td><td>Male</td><td>neutral</td><tr><td>Blackwulf</td><td>Male</td><td>-</td><tr><td>Boba Fett</td><td>Male</td><td>bad</td><tr><td>Brundlefly</td><td>Male</td><td>-</td><tr><td>Buffy</td><td>Female</td><td>good</td><tr><td>Doctor Fate</td><td>Male</td><td>good</td><tr><td>Emma Frost</td><td>Female</td><td>good</td><tr><td>Fabian Cortez</td><td>-</td><td>bad</td><tr><td>Falcon</td><td>Male</td><td>good</td><tr><td>Fallen One II</td><td>Male</td><td>bad</td><tr><td>Faora</td><td>Female</td><td>bad</td><tr><td>Feral</td><td>-</td><td>good</td><tr><td>Fighting Spirit</td><td>Female</td><td>good</td><tr><td>Fin Fang Foom</td><td>Male</td><td>good</td><tr><td>Firebird</td><td>Female</td><td>good</td><tr><td>Firelord</td><td>-</td><td>good</td><tr><td>Firestar</td><td>Female</td><td>good</td><tr><td>Firestorm</td><td>Male</td><td>good</td><tr><td>Firestorm</td><td>Male</td><td>good</td><tr><td>Fixer</td><td>-</td><td>bad</td><tr><td>Flash</td><td>Male</td><td>good</td><tr><td>Flash Gordon</td><td>Male</td><td>good</td><tr><td>Flash II</td><td>Male</td><td>good</td><tr><td>Flash III</td><td>Male</td><td>good</td><tr><td>Flash IV</td><td>Male</td><td>good</td><tr><td>Forge</td><td>-</td><td>good</td><tr><td>Franklin Richards</td><td>Male</td><td>good</td><tr><td>Franklin Storm</td><td>-</td><td>good</td><tr><td>Frenzy</td><td>Female</td><td>bad</td><tr><td>Frigga</td><td>Female</td><td>good</td><tr><td>Iron Fist</td><td>Male</td><td>good</td><tr><td>Jack of Hearts</td><td>Male</td><td>good</td><tr><td>Jennifer Kale</td><td>Female</td><td>good</td><tr><td>Kid Flash</td><td>Male</td><td>good</td><tr><td>Kid Flash II</td><td>Male</td><td>good</td><tr><td>Killer Frost</td><td>Female</td><td>bad</td><tr><td>Man of Miracles</td><td>-</td><td>-</td><tr><td>Man-Wolf</td><td>Male</td><td>good</td><tr><td>Master Chief</td><td>Male</td><td>good</td><tr><td>Misfit</td><td>Female</td><td>good</td><tr><td>Mister Fantastic</td><td>Male</td><td>good</td><tr><td>Mister Freeze</td><td>Male</td><td>bad</td><tr><td>Mister Knife</td><td>Male</td><td>bad</td><tr><td>Nick Fury</td><td>Male</td><td>good</td><tr><td>Offspring</td><td>Male</td><td>good</td><tr><td>Professor X</td><td>Male</td><td>good</td><tr><td>Professor Zoom</td><td>Male</td><td>bad</td><tr><td>Razor-Fist II</td><td>Male</td><td>bad</td><tr><td>Rick Flag</td><td>Male</td><td>bad</td><tr><td>Sif</td><td>Female</td><td>good</td><tr><td>Silver Surfer</td><td>Male</td><td>good</td><tr><td>Starfire</td><td>Female</td><td>good</td><tr><td>Steppenwolf</td><td>Male</td><td>bad</td><tr><td>Two-Face</td><td>Male</td><td>bad</td><tr><td>Wildfire</td><td>Male</td><td>good</td><tr><td>Wolfsbane</td><td>Female</td><td>good</td><tr><td>Wyatt Wingfoot</td><td>Male</td><td>good</td></table></body></html>
