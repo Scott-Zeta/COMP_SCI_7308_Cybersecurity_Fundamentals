@@ -1,0 +1,44 @@
+HTTP/1.1 200 OK
+Date: Tue, 28 Mar 2023 01:09:19 GMT
+Server: Apache/2.4.38 (Debian)
+X-Powered-By: PHP/7.2.34
+Vary: Accept-Encoding
+Content-Length: 1177
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+
+<form class="form-horizontal" method="POST">
+<input type="submit" value="Request Secret" name="submit">
+</form>
+
+Welcome Super User! Here is the secret: <span style='color:blue'>csf2021_{client-postbox-amid}</span><br/><br/>Source: <pre>&lt;?php
+if (!isset($_COOKIE['superuser'])) {
+    setcookie(&quot;superuser&quot;,&quot;false&quot;);
+    $admin = 'false';
+}
+else {
+    $admin = $_COOKIE['superuser'];
+}
+
+?&gt;
+&lt;html&gt;&lt;body&gt;
+
+&lt;form class=&quot;form-horizontal&quot; method=&quot;POST&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Request Secret&quot; name=&quot;submit&quot;&gt;
+&lt;/form&gt;
+
+&lt;?php
+if(isset( $_POST['submit'])) {
+    if(strtolower($admin) === &quot;true&quot;) {
+        print(&quot;Welcome Super User! Here is the secret: &lt;span style='color:blue'&gt;csf2021_{client-postbox-amid}&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&quot;);
+        print(&quot;Source: &lt;pre&gt;&quot; . htmlentities(shell_exec('/bin/cat '. __FILE__)) . &quot;&lt;/pre&gt;&quot;);
+    }
+    else {
+        print(&quot;Sorry, only superadmins are allowed to see the secret.&quot;);
+    }
+}
+?&gt;
+&lt;/body&gt;&lt;/html&gt;
+</pre></body></html>
